@@ -12,10 +12,12 @@ def insertion_sort(arr):
             position -= 1
         arr[position] = current_value
     t_end = t.time()
+    print(arr)
     print(t_end-t_start)
     return arr
 
-arr = list(range(1, 1001))
+arr = list(range(1, 100001))
 r.shuffle(arr)
-print(insertion_sort(arr))
+insertion_sort(arr)
 
+# 205.48200583457947 seconds for 100000 numbers random shuffled list
