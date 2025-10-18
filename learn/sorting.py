@@ -6,3 +6,6 @@ wsorted = sorted(words, key=lambda x: x[-1])
 
 print(wsorted)
 print(sort_numbers)
+
+#test for git inside vs code nvm
+#tst2 nvm
