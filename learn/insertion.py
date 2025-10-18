@@ -1,4 +1,8 @@
+import random as r
+import time as t
+
 def insertion_sort(arr):
+    t_start = t.time()
     n = len(arr)
     for i in range(1, n):
         current_value = arr[i]
@@ -7,7 +11,11 @@ def insertion_sort(arr):
             arr[position] = arr[position - 1]
             position -= 1
         arr[position] = current_value
+    t_end = t.time()
+    print(t_end-t_start)
     return arr
 
-arr = [5, 2, 4, 1]
+arr = list(range(1, 1001))
+r.shuffle(arr)
 print(insertion_sort(arr))
+
