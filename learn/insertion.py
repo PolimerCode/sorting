@@ -20,3 +20,4 @@ arr = list(range(1, 100001))
 r.shuffle(arr)
 insertion_sort(arr)
 
+# 205.48200583457947 seconds for 100000 numbers random shuffled list
