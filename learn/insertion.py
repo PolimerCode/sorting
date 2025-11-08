@@ -16,7 +16,7 @@ def insertion_sort(arr):
     print(t_end-t_start)
     return arr
 
-arr = list(range(1, 100001))
+arr = list(range(1, 1001))
 r.shuffle(arr)
 insertion_sort(arr)
 
